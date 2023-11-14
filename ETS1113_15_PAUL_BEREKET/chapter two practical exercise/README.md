@@ -1,1 +1,1 @@
-practical activities on problem anaysis, alogorithm design, writing code.
+practical activities on problem anaysis, alogorithm design, and writing code.
