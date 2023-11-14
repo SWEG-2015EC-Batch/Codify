@@ -14,7 +14,7 @@ int main(){
 
     cout << "Your Body Mass Index is: " << BMI << '\n';
     
-
+    //Optional CODE, added for improved responce
     if (BMI >= 30){
         cout << "You have a Significantly increased risk of chronic diseases";
     }
