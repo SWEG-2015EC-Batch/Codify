@@ -35,7 +35,7 @@ Process: <br/>
 &nbsp; grossS = baseS + (workHr * bonusRt * 4); //we multiply by 4 because the work hour is in weeks<br/>
 &nbsp; netS = grossS - (grossS * pensionRate) - (grossS * taxRate);<br/>
 &nbsp; bonusP = bonusRt * workHr * 4;<br/>
-#### 3.4 Print result (letter). (How?)
+#### 3.4 Print results. (How?)
 &nbsp; cout << "Dear " << empName << '\n';<br/>
 &nbsp;cout << "Your gross salary for this month is: " << grossS << '\n';<br/>
 &nbsp;cout << "Your net salary for this month is: " << netS << '\n';<br/>
