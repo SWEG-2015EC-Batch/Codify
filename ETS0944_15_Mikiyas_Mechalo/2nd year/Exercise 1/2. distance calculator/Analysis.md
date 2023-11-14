@@ -22,5 +22,5 @@ Process: <br/>
 	&nbsp;cin >> MPG;<br/>
 3.3 Perform operation - compute the Possible distance without refueling(How?)<br/>
 	&nbsp;Pd = MPG * capacity;<br/>
-3.5 Print result (BMI). (How?)<br/>
+3.5 Print result (Distance). (How?)<br/>
 	&nbsp;cout << “The automobile can go a distance of  ” << Pd << “ miles without refueling.”;<br/>
