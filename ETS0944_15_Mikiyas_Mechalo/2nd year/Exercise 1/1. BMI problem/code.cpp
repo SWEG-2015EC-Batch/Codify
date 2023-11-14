@@ -1,3 +1,4 @@
+//this code calculates the Body mass index by accepting mass and height 
 #include <iostream>
 
 using namespace std;
