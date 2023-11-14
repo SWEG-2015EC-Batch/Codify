@@ -10,7 +10,7 @@ int main(){
     cin >> mass;
     cout << "Please enter your height in meters: ";
     cin >> height;
-    BMI = mass/ (height * height);
+    BMI = mass/ (height * height); //we also could've done the same calculation as BMI= mass/ pow(height, 2) by using the cmath header
 
     cout << "Your Body Mass Index is: " << BMI << '\n'; 
     
@@ -27,8 +27,6 @@ int main(){
     else {
         cout << "You have a normal BMI and are at Lowest risk of chronic diseases";
     }
-
-
 
 
 
