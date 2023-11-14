@@ -24,5 +24,5 @@ Process: <br/>
     
  #### 3.3 Perform operation - (How?)
 &nbsp; z= pow(x, y);
-#### 3.4 Print result (letter). (How?)
+#### 3.4 Print result (X^y). (How?)
 &nbsp; cout << x << " the power of " << y << " is " << z;<br/>
