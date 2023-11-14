@@ -1,3 +1,4 @@
+//this code accpts two numbers to raise one of the numbers to the other number
 #include <iostream>
 #include <cmath>
 
