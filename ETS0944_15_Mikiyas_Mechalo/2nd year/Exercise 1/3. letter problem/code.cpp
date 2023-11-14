@@ -1,3 +1,4 @@
+//this code accepts a letter and converts to uppercase if small and viseversa.
 #include <iostream>
 #include <ctype.h>
 
