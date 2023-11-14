@@ -1,3 +1,4 @@
+//this code calculates the Possible distance without refueling for an automobile given the tank size and miles per gallon
 #include <iostream>
 
 using namespace std;
