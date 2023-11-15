@@ -10,7 +10,7 @@ int main(){
     cin>> Mg;
 
     psd = capacity * Mg;
-    cout<<"the automible can go a distance of "<< psd<< " mile ith out refueling";
+    cout<<"the automible can go a distance of "<< psd<< " with out refueling";
 
     return 0;
 }
