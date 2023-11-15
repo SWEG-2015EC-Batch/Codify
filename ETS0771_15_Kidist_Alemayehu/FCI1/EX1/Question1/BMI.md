@@ -1,5 +1,6 @@
 Program analysis for calculating BMI
 
+
 Input: height  and weight 
 
 Output: Body mass index (BMI)
@@ -8,7 +9,9 @@ Operation: - read height, weight and  Body mass index as BMI
       BMI=w/h*h
       display BMI
  
+
 Pseudocode for calculating BMI
+
 
 Step 1: start
 
