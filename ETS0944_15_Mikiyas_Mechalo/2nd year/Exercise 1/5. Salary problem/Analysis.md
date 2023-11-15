@@ -16,12 +16,25 @@ Process: <br/>
           &nbsp;5. Calculate net salary as gross salary - gross salary(pension Rate) - gross salary(tax rate) <br/>
           &nbsp;6. Calculate bonus payment as bonus rate * working hours<br/>
           &nbsp;7. Display the employee name with his/her gross salary, net salary and  bonus payment.
-## 3. Design the program
 
-#### 3.1 Variable declaration and initialization (What and How?)
+  ## 3. Pseudo code
+  Step 1: start<br/>
+  Step 2: read employee name <br/>
+  Step 4: read working hours <br/>
+  Step 5: read bonus rate <br/>
+  Step 6: read base salary  <br/>
+  Step 7: calculate gross salary = base salary + (bonus rate * working hours * 4) <br/>
+  step 8: calculate net salary = gross salary - gross salary(pension Rate) - gross salary(tax rate) <br/>
+  step 9: calculate bonus payment = bonus rate * working hours<br/>
+  Step 5: print employee name ,gross salary, net salary, bonus payment<br/>
+  Step 6: stop<br/>
+  
+## 4. Design the program
+
+#### 4.1 Variable declaration and initialization (What and How?)
 &nbsp;int workHr, baseS, bonusRt, grossS, bonusP; <br/>
 &nbsp;double netS, pensionRate(0.05), taxRate(0.15); <br/>
-#### 3.2 Reading input data (How)
+#### 4.2 Reading input data (How)
 &nbsp;cout << "Please enter your full name: ";<br/>
 &nbsp;getline (cin, empName);<br/>
 &nbsp;cout << "Please enter the amout of hours you've worked: ";<br/>
@@ -31,11 +44,11 @@ Process: <br/>
 &nbsp;cout << "Please enter your bonus rate per hour: ";<br/>
 &nbsp;cin >> bonusRt;<br/>
  
- #### 3.3 Perform operation - (How?)
+ #### 4.3 Perform operation - (How?)
 &nbsp; grossS = baseS + (workHr * bonusRt * 4); //we multiply by 4 because the work hour is in weeks<br/>
 &nbsp; netS = grossS - (grossS * pensionRate) - (grossS * taxRate);<br/>
 &nbsp; bonusP = bonusRt * workHr * 4;<br/>
-#### 3.4 Print results. (How?)
+#### 4.4 Print results. (How?)
 &nbsp; cout << "Dear " << empName << '\n';<br/>
 &nbsp;cout << "Your gross salary for this month is: " << grossS << '\n';<br/>
 &nbsp;cout << "Your net salary for this month is: " << netS << '\n';<br/>
