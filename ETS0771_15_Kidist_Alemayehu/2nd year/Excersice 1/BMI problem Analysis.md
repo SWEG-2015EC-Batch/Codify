@@ -5,7 +5,7 @@ Operation: - read height, weight and  Body mass index as BMI
       BMI=w/h*h
       display BMI
  
-Pseudocode for calculating BMI
+Pseudocode for calculating BMI:-
 
 Step 1: start
 Step 2: enter height and weight
