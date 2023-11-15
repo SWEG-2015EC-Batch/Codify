@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-    double height, mass, BMI;
+    double height, mass, BMI; //here BMI is not necessary but more neat
     cout << "********* Body mass index calculator *********\n";
     cout << "Please enter your mass in kilograms: ";
     cin >> mass;
