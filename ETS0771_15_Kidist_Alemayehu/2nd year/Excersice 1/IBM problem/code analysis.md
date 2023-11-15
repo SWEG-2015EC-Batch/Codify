@@ -1,3 +1,6 @@
+program analysis for calculating BMI
+
+
 Program analysis for calculating BMI
 
 Input: height  and weight 
