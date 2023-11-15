@@ -6,7 +6,7 @@ Process: m = cp*mpg
 algorithm 
 step 1: start
 step 2: read fuel capacity (cp), mile per gallon (mpg)
-step 3: m = cp*mpg
+step 3: calculate m = cp*mpg
 step 4: print m
 step 5: end
 
