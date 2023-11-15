@@ -7,7 +7,7 @@ int main()
     string employee_name;
     float weekly_working_hours, bonus_rate_per_hour, base_salary;
 
-    cout << "Enter employee name: ";
+    cout << "Enter employee's full name: ";
     cin >> employee_name;
     cout << "Enter weekly working hours: ";
     cin >> weekly_working_hours;
