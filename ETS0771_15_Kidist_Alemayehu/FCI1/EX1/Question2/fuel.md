@@ -1,6 +1,5 @@
 Program analysis
 
-
 Input: automobile's fuel tank capacity (capacity) and miles per gallon for the automobile(Mg)
 
 Output: distance without refueling(psd)
