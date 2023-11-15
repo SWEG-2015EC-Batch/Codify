@@ -7,11 +7,18 @@ Write a C++ program that converts a letter entered from the keyboard to its uppe
 Input: a letter<br/>
 Output: uppercase or lowercase version of the letter<br/>
 Process: <br/>
-          &nbsp;1. Variable declaration: letter<br/>
-          &nbsp;2. Prompt the user to enter a letter<br/>
-          &nbsp;3. Accept the user input.<br/>
-          &nbsp;4. Check if the accepted letter is capital or small and convert it to its counterpart<br/>
-          &nbsp;5. Display the converted letter<br/>
+  1. Variable declaration: letter<br/>
+  2. Prompt the user to enter a letter<br/>
+  3. Accept the user input.<br/>
+  4. Check if the accepted letter is capital or small and convert it to its counterpart<br/>
+  5. Display the converted letter<br/>
+  ## 3. Pseudo code
+  Step 1: start<br/>
+  Step 2: read the letter<br/>
+  Step 3: convert the letter to its opposite case<br/>
+  Step 5: print the converted letter<br/>
+  Step 6: stop<br/>
+
 ## 3. Design the program
 
 #### 3.1 Variable declaration and initialization (What and How?)
