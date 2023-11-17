@@ -37,3 +37,6 @@ Process: <br/>
   cout << "Time needed in seconds is: " << timeInSec << '\n';<br/>
   cout << "Time needed in Minutes is: " << timeInMinute << '\n';<br/>
   cout << "Time needed in Hours is: " << timeInHr;<br/>
+
+  ## 5. Flowchart
+  ![flowchart](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20235546.png)
