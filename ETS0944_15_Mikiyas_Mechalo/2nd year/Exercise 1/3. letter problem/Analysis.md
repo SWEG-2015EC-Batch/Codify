@@ -12,34 +12,39 @@ Process: <br/>
   3. Accept the user input.<br/>
   4. Check if the accepted letter is capital or small and convert it to its counterpart<br/>
   5. Display the converted letter<br/>
+  
   ## 3. Pseudo code
   Step 1: start<br/>
   Step 2: read the letter<br/>
-  Step 3: convert the letter to its opposite case<br/>
-  Step 5: print the converted letter<br/>
-  Step 6: stop<br/>
+  Step 3: Check if the input is capital or small letter <br/>
+  Step 4: If it is neither print an error message <br/>
+  Step 5: convert the letter to its opposite case<br/>
+  Step 6: print the converted letter<br/>
+  Step 7: stop<br/>
 
 ## 4. Design the program
 
 #### 4.1 Variable declaration and initialization (What and How?)
-&nbsp;char letter;<br/>
+  char letter;<br/>
 #### 4.2 Reading input data (How?)
-&nbsp;cout << "Please enter a letter: ";<br/>
- &nbsp;   cin >> letter;<br/>
+  cout << "Please enter a letter: ";<br/>
+  cin >> letter;<br/>
     
  #### 4.3 Perform operation - (How?)
-&nbsp; 1. Check if the letter is upper or lower case<br/>
-&nbsp;if (isupper(letter)){<br/>
-   &nbsp;     letter = tolower(letter);<br/>
-   &nbsp; }<br/>
+  1. Check if the letter is upper or lower case<br/>
+    if (isupper(letter)){<br/>
+    letter = tolower(letter);<br/>
+    }<br/>
 #### 4.4 Check if the letter is capital 
-&nbsp;else if (islower(letter)){<br/>
-  &nbsp;      letter = toupper(letter);<br/>
-  &nbsp;      cout << "Your letter in upper case is: " << letter ;<br/>
- &nbsp;   }<br/>
+  else if (islower(letter)){<br/>
+    letter = toupper(letter);<br/>
+    cout << "Your letter in upper case is: " << letter ;<br/>
+    }<br/>
 #### 4.5 If not both print an error message
-&nbsp;else {<br/>
-   &nbsp;     cout << "Invalid input";<br/>
-    &nbsp;}
+  else {<br/>
+  cout << "Invalid input";<br/>
+  }
 #### 4.6 Print result (letter). (How?)
-&nbsp;cout << "Your letter in upper case is: " << letter ;<br/>
+  cout << "Your letter in upper case is: " << letter ;<br/>
+  ## 5. FLowchart
+  ![Flowchart](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20233838.png)
