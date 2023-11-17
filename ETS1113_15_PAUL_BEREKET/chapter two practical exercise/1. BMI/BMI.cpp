@@ -12,7 +12,7 @@ int main(){
     cout << "Please enter your height in meters: " ;
     cin >> height;
     BMI= mass/pow(height,2);
-    cout << "Your Body Mass Index is: " << mass/pow(height,2) << endl ;
+    cout << "Your Body Mass Index is: " << BMI << endl ;
 
     //This code is optional and was added to improve the response
    BMI= mass/pow(height,2);
