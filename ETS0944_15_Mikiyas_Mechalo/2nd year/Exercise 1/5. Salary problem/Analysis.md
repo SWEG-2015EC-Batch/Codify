@@ -54,3 +54,5 @@ Process: <br/>
   cout << "Your gross salary for this month is: " << grossS << '\n';<br/>
   cout << "Your net salary for this month is: " << netS << '\n';<br/>
   cout << "Your bonus payment for the month is: " << bonusP <<'\n';<br/>
+  ## 5. Flowcahrt
+  ![flowchart](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20235159.png)
