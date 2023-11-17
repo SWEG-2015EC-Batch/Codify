@@ -1,4 +1,4 @@
-
+// A program that converts a letter entered from the keyboard to its uppercase or lower case equivalent 
 #include <iostream>
 #include <ctype.h>
 using namespace std;
