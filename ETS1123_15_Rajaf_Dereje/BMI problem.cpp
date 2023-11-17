@@ -5,15 +5,14 @@ using namespace std;
 
 int main()
 {
-   cout<<"enter your mass in kilogram";
-   double M;
+   float M,H;
+
+   cout<<"enter your mass in kilogram : ";
    cin>>M;
-   cout<<"enter your height in meter";
-   double H;
+   cout<<"enter your height in meter : ";
    cin>>H;
-   double BMI;
-   BMI=M /(H*H);
-   cout<<"your BMI is :"<<BMI;
+
+   cout<<"your BMI is :"<<M /(H*H);
     return 0;
 }
 
