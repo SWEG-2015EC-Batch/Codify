@@ -37,3 +37,5 @@ Process: <br/>
 	Pd = MPG * capacity;
 ### 4.5 Print result (Distance). (How?)
 	cout << “The automobile can go a distance of  ” << Pd << “ miles without refueling.”;
+ ## 5. Flowchart
+ ![Flowcahrt](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20232022.png)
