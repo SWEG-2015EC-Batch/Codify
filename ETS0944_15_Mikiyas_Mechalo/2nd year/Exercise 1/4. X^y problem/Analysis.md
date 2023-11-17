@@ -35,3 +35,6 @@ Process: <br/>
 &nbsp; z= pow(x, y);
 #### 4.4 Print result (X^y). (How?)
 &nbsp; cout << x << " the power of " << y << " is " << z;<br/>
+
+## 5. Flowchart
+![flowchart](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20234141.png)
