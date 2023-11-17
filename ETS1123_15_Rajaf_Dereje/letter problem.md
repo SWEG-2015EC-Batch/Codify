@@ -1,12 +1,11 @@
 Analysis 
-input: letter 
-output: lower case of the input if the input was upper case and vise versa
-operation: change from lower to upper case or from upper to lower case
+input: lowercase letter or character 
+output: uppercase of the inputed letter
+operation: change from lowercase to uppercase / letter = toupper(letter)
 
-Algorithm:
+Algorithm design (pseudocode):
 step 1: start
-step 2: read a character from keyboard 
-step 3: if the character not a leter print "invalid input"
-       else if the letter is lower case print its upper case
-       else print its lower case
-step 4: end
+step 2: read a lowercase character from keyboard 
+step 3: change the lowercase character to its uppercase character 
+step 4: print the uppercase character 
+step 5: end
