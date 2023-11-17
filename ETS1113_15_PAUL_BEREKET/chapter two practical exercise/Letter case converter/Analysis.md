@@ -56,16 +56,14 @@ if (isupper(letter)){
         letter = tolower(letter); 
 
         cout << "Your letter in upper case is: " << letter ; 
-
-    } 
+ } 
 
     else if (islower(letter)){ 
 
         letter = toupper(letter); 
 
         cout << "Your letter in upper case is: " << letter ; 
-
-    } 
+ } 
 
     else { 
 
