@@ -1,6 +1,6 @@
 Analysis 
 
-Input:- capacity in gallons(c), Miles per gallons(mpg) 
+Input:- capacity in gallons(c), miles per gallons(mpg) 
 Output:- number of miles  you can drive without refueling
 Process:- number of miles you can drive without refueling = capacity in gallons * miles per gallons 
 
