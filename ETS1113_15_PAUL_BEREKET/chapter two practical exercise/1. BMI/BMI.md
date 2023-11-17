@@ -4,10 +4,13 @@
 person. The program should read the height and weight of a person being given 
 and display the BMI.  
 
-                     Problem analysis 
+
+                 Problem analysis 
 
 Input: A persons height and weight. 
+
 Output: The body mass Index (BMI) of the person and an indication that if a person is underweight, overweight, or at normal weight 
+
 Process:  
         Variable declaration- involves declaring height, weight, and BMI. 
         No initialization.
@@ -19,6 +22,7 @@ Process:
 
 Variable declaration:  
        float height, weight, BMI ; 
+
 Reading input data:  
        cout<< “ Enter the height of the person” << endl: 
       cin>> height 
@@ -29,17 +33,22 @@ Reading input data:
 
 BMI=weight / pow(height,2) ; 
 
-Print the result: 
+                  Print the result: 
 
 cout<<” The body mass index of the person is” << BMI ; 
 
                    Pseudo code  
 
 step 1. Start 
+
 step 2. Read height  
+
 step 3. Read weight 
+
 step 4. Calculate BMI, BMI= weight  / height^2 
+
 step 5. Print the BMI 
+
 step 6. End 
     
 
