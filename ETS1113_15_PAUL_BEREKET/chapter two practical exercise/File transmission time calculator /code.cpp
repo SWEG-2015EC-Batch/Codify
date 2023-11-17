@@ -1,3 +1,5 @@
+//This program calculates the total required time to transmit a certain amount of file
+
 #include <iostream>
 using namespace std;
 
