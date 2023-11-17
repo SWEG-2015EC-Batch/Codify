@@ -1,29 +1,16 @@
-//this program converts a given letter into its upper or lower class counter fit
+//this program converts a given lowercase character  into its upperclass counter fit
 #include <iostream>
 #include <ctype.h>
+
 
 using namespace std;
 
 int main(){
 
-    char letter;
-
-    cout << "please enter a letter: ";
-    cin >> letter;
-
-    if (isupper(letter)){
-        letter = tolower(letter);
-        cout << "Your letter in upper case is: " << letter ;
-    }
-    else if (islower(letter)){
-        letter = toupper(letter);
-        cout << "Your letter in upper case is: " << letter ;
-    }
-    else {
-        cout << "Invalid input";
-    }
-
-
+char letter;
+cout<< "enter a lower case letter :";
+cin>>letter;
+letter = toupper(letter);
+cout<< "Uppercase of the letter you entered is : " <<letter;
    return 0;
 }
-
