@@ -17,7 +17,7 @@ cin>>work_hr;
 cout<<"enter your bonus rate: ";
 cin>>bonus_Rt;
 
-gross_S = base_S + ( work_hr*bonus_Rt*4);
+gross_S = base_S + ( work_hr*bonus_Rt*4); //we multiply it by 4 to convert weekly work hour into monthly
 net_s = gross_S - (gross_S*0.05) - (gross_S*0.05);
 bonus_p = bonus_Rt*work_hr*4;
 
