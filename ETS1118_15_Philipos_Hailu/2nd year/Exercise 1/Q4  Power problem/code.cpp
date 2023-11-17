@@ -1,4 +1,4 @@
-// A program that finds the result of the X the power of Y
+// A program that finds the result of X the power of Y
 #include <iostream>
 #include <math.h>
 int main() {
