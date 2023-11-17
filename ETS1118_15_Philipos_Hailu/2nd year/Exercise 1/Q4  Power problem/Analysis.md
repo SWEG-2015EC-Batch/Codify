@@ -1,6 +1,6 @@
 Analysis 
 
-Input:- X the base number and Y the exponent number
+Input:- the base number (X) and the exponent number (Y)
 
 Output:- print the result number of X the power of Y
 
