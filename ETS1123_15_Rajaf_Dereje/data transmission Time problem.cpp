@@ -1,20 +1,14 @@
-//this program finds the time it takes to transfer 
+//this program finds the time it takes to transfer n number of bytes
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int data;
-    double second, minuit, hour, day;
-    cout<<"enter number of bytes of your data :";
-    cin>>data;
-    second = data/960;
-    minuit = second /60;
-    hour = minuit/60;
-
-    day =hour/24;
-    cout<<"the transmission of this file will take : "<<second<< "sec = " <<minuit<< "min = "<< hour<<"hr = "<<day<<"dy ";
+  double data;
+   cout<<"enter number of bytes of your data :";
+   cin>>data;
+   cout<<"the transmission of this file will take : "<<data/960<< "sec = " <<data/57600<< "min = "<< data/3456000<<"hr = "<<data/82944000<<"dy ";
 
     return 0;
 }
