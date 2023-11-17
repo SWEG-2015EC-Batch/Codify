@@ -34,3 +34,6 @@ cout << "Please enter your mass in kilograms: ";</br>
 	BMI = mass/ (height * height);
 ### 4.5 Print result (BMI). (How?)
 cout << “Your Body mass index is ” << BMI;
+
+## 5. Flowchart
+![Flowchart](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/1/Screenshot%202023-11-17%20231350.png)
