@@ -1,10 +1,10 @@
 Analysis 
 
-Input:- X and Y value 
+Input:- X the base number and Y the exponent number
 
-Output:- Computed value of X^Y
+Output:- print the result number of X the power of Y
 
-Process:- Comput X^Y
+Process:- Comput  X the power of Y
 
 Algorithm in Pseudocode
 
