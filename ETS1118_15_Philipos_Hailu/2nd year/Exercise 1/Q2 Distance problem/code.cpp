@@ -1,4 +1,4 @@
-//This program calculates the distance that  can be traveled without refueling for an automobile given the size of the fuel tank and miles per gallon
+// A program calculates the number of miles that an automobile can be driven without refueling.
 #include <iostream>
 int main() {
     using namespace std;
