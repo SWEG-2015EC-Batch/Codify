@@ -23,5 +23,5 @@ Step 4:display BMI
 Step 5:end
 
 **Flow chart**
-https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS0771_15_Kidist_Alemayehu/FCI1/EX1/Question1/BMI.jpg
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS0771_15_Kidist_Alemayehu/FCI1/EX1/images/BMI.jpg
 
