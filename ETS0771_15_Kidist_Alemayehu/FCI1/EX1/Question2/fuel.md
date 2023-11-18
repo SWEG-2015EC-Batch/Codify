@@ -1,4 +1,4 @@
-Program analysis
+**Problem analysis**
 
 Input: automobile's fuel tank capacity (capacity) and miles per gallon for the automobile(Mg)
 
@@ -11,7 +11,7 @@ Operation: - read automobile's fuel tank capacity as capacity,  miles per gallon
 -display psd
 
 
-Pseudocode 
+**Pseudocode** 
 
 Step 1: start
 
@@ -23,3 +23,5 @@ Step 4:display psd
 
 Step 5:end
 
+**flowchart**
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS0771_15_Kidist_Alemayehu/FCI1/EX1/images/distance.jpg
