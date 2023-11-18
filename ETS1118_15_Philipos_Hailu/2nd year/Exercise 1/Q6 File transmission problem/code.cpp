@@ -1,4 +1,4 @@
-
+// a program that calculates how long it will take to send a file, given the file size in bytes 
 #include <iostream>
 
 int main() {
