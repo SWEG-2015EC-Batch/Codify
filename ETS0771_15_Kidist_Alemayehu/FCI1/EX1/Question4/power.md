@@ -1,4 +1,4 @@
-Program analysis
+**Problem analysis**
 
 Input: X and Y
 
@@ -8,7 +8,7 @@ Operation:  - R=pow(X,Y)
 
 -display R
 
-Pseudocode 
+**Pseudocode** 
 
 Step 1: start
 
@@ -20,3 +20,5 @@ Step 4:display R
 
 Step 5:end
 
+**flow chart**
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS0771_15_Kidist_Alemayehu/FCI1/EX1/images/power.jpg
