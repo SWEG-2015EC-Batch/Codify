@@ -66,3 +66,6 @@ Step 4. Calculate fuel economy: fuel economy = fuel capacity * miles per gallon
 Step 5. Display the maximum distance the car can travel without refueling (fuel capacity). 
 
 Step 6. End 
+
+     Flowchart 
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/fuel%20economy/Screenshot%202023-11-18%20104842.png
