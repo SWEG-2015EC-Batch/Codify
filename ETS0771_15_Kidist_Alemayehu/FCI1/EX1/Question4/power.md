@@ -2,11 +2,11 @@
 
 Input: X and Y
 
-Output: R
+Output: x^y
 
-Operation:  - R=pow(X,Y)
+Operation:  pow(X,Y)
 
--display R
+-display x^y
 
 **Pseudocode** 
 
@@ -14,9 +14,9 @@ Step 1: start
 
 Step 2: enter X and Y
 
-Step 3:calculate R as R=pow(X,Y)
+Step 3:calculate x the power of y as pow(X,Y)
 
-Step 4:display R
+Step 4:display x^y
 
 Step 5:end
 
