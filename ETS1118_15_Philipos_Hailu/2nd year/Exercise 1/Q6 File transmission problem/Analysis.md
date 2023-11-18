@@ -18,6 +18,6 @@ Step4; print time in seconds
 
 Step5; end
 
-![Flowchart](ETS1118_15_Philipos_Hailu/Screenshot_20231118-114858-623.png)
+![Flowchart](Screenshot_20231118-114858-623.png)
 
 
