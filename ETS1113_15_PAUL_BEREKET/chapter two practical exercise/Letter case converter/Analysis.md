@@ -86,3 +86,7 @@ Step 5. If the letter is in lowercase, convert it to uppercase and display the c
 Step 6. If the letter is neither uppercase nor lowercase, print invalid input. 
 
 Step 7. End 
+  
+ flowchart 
+
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/case%20converter/Screenshot%202023-11-18%20112538.png
