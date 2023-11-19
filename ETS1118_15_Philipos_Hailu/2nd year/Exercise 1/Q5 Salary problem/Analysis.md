@@ -29,16 +29,18 @@ Step9; print bonus payment
 Step10; end
 
 
-Algorithm in flowchart
+Algorithm ini flowchart 
+
 #Flowchart
 ```mermaid
 flowchart TD;
-A([start]) --> B[/enter your data size in bytes /];
-
-B --> C["calculate sec = d/960"];
-C --> D["calculate min = d/57600"];
-D --> E["calculate  hr = d/3456000"];
-E --> F["calculate day = d/82944000"];
-F --> G[/print sec, min, hr, day/];
-G --> H([end]);
+A([start]) --> B[/enter your name/];
+B --> C[/enter your weekly working hour/];
+C --> D[/enter your bonus rate/];
+D --> E[/base salary/];
+E--> F["compute gross_s=base_s + (work_hr*bonus_rt*4)"];
+F --> G["compute net_s=gross_s - (gross_s*0.05) - (gross_s*0.15)"];
+G --> H["compute bonus payment= work_hr*bonus_rt*4"];
+H --> I[/print gross_s, net_s, bonus payment/];
+I --> J([end]);
 ```
