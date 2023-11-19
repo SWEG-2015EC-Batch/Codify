@@ -18,4 +18,14 @@ Step4; print the computed value
 
 Step5; end
 
+Algorithm in flowchart
 
+#Flowchart
+```mermaid
+flowchart TD;
+A([start]) --> B[/enter base x/];
+B --> C[/enter exponent y/];
+C --> D["z = pow(x,y)"];
+D --> E[/print z/];
+E --> F([end]);
+```
