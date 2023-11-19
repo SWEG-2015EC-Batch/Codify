@@ -23,9 +23,9 @@ Algorithm in flowchart
 #Flowchart
 ```mermaid
 flowchart TD;
-A([start]) --> B[/enter base x/];
-B --> C[/enter exponent y/];
-C --> D["Z = pow(x,y)"];
+A([start]) --> B[/enter base X/];
+B --> C[/enter exponent Y/];
+C --> D["Z = pow(X,Y)"];
 D --> E[/print Z/];
 E --> F([end]);
 ```
