@@ -113,4 +113,7 @@ Step 14. Calculate the bonus payment by multiplying the bonus rate per hour by t
 
 Step 15. Display the gross salary, net salary, and bonus payment to the user 
 
-Step 16. end 
+Step 16. end
+
+                       Flowchart
+        ETS1113_15_PAUL_BEREKET/chapter two practical exercise/flowchart/salary calculator/salary calculator flow chart.png               
