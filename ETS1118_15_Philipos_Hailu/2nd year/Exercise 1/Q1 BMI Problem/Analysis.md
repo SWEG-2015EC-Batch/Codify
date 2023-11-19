@@ -12,21 +12,14 @@ Step3; comput BMI = weight/ ( height * height )
 Step4; print BMI
 Step5; end
 
+Algorithm in flowchart:
+
 #Flowchart
-
-*** mermaid
-
-
+```mermaid
 flowchart TD;
-
-A([Start]) --> B[/Enter your weight in kilograms/];
-
-B --> C[/Enter your height in meters/];
-
-C --> D["BMI = body_weight / (height * height)"];
-
-D--> E[/Print 'Your BMI is' BMI/];
-
-E --> F([End]);
-
-
+A([start]) --> B[/enter your weight in kilogram/];
+B --> C[/enter your height in meters/];
+C --> D["BMI = body_weight / (height*height)"];
+D --> E[/print 'your BMI is' BMI/];
+E --> F([end]);
+```
