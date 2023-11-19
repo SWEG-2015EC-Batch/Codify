@@ -24,12 +24,9 @@ Algorithm in flowchart
 flowchart TD;
 A([start]) --> B[/enter the file size in bytes /];
 
-B --> C["calculate sec = d/960"];
-C --> D["calculate min = d/57600"];
-D --> E["calculate  hr = d/3456000"];
-E --> F["calculate day = d/82944000"];
-F --> G[/print sec, min, hr, day/];
-G --> H([end]);
+B --> C["TimeinSec = FsizeInBytes/960"];
+C --> D[/print sec, min, hr, day/];
+D --> E([end]);
 ```
 
 
