@@ -18,6 +18,6 @@ flowchart TD;
 A([start]) --> B[/enter the capacity in galon/];
 B --> C[/enter miles per gallon/];
 C --> D["number of miles = capacity in galon * miles per gallon"];
-D --> E[/print 'number of miles is' number of miles/];
+D --> E[/print 'number of miles you can drive without refueling is' number of miles/];
 E --> F([end]);
 ```
