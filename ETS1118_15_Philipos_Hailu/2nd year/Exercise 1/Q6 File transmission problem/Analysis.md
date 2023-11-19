@@ -25,7 +25,7 @@ flowchart TD;
 A([start]) --> B[/enter the file size in bytes /];
 
 B --> C["TimeinSec = FsizeInBytes/960"];
-C --> D[/print sec, min, hr, day/];
+C --> D[/print time in seconds/];
 D --> E([end]);
 ```
 
