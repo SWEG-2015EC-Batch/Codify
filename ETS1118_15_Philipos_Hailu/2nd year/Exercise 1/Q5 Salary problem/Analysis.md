@@ -38,9 +38,9 @@ A([start]) --> B[/enter your name/];
 B --> C[/enter your weekly working hour/];
 C --> D[/enter your bonus rate/];
 D --> E[/base salary/];
-E--> F["compute gross_s=base_s + (work_hr*bonus_rt*4)"];
-F --> G["compute net_s=gross_s - (gross_s*0.05) - (gross_s*0.15)"];
-G --> H["compute bonus payment= work_hr*bonus_rt*4"];
-H --> I[/print gross_s, net_s, bonus payment/];
+E--> F["compute grossS = BaseS + ( wWorkHrs * BonusRateperHr * 4)"];
+F --> G["compute netS = grossS - (grossS * pensionRate) - (grossS * taxRate)"];
+G --> H["compute BonusP = BonusRateperHr * wWorkHrs * 4"];
+H --> I[/print employee name, grossS, netS, BonusP/];
 I --> J([end]);
 ```
