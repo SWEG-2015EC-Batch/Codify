@@ -1,3 +1,5 @@
+//this program calculate the gross salary, net salary and bonus payment given net salary, bonus payment rate and working hours
+
 #include <iostream>
 using namespace std;
 
