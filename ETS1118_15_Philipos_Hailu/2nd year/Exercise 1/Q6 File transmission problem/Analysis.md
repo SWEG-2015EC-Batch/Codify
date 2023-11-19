@@ -18,6 +18,18 @@ Step4; print time in seconds
 
 Step5; end
 
-![Flowchart](Screenshot_20231118-114858-623.png)
+Algorithm in flowchart
+#Flowchart
+```mermaid
+flowchart TD;
+A([start]) --> B[/enter your data size in bytes /];
+
+B --> C["calculate sec = d/960"];
+C --> D["calculate min = d/57600"];
+D --> E["calculate  hr = d/3456000"];
+E --> F["calculate day = d/82944000"];
+F --> G[/print sec, min, hr, day/];
+G --> H([end]);
+```
 
 
