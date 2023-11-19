@@ -8,7 +8,7 @@ int main() {
  cin>> c;
  cout<<"enter miles per gallon:- ";
  cin>> mpg;
- cout<<"number of miles:- "<< c * mpg;
+ cout<<"number of miles is:- "<< c * mpg;
 
     return 0;
 }
