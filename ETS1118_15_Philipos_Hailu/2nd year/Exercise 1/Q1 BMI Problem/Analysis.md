@@ -19,7 +19,7 @@ Algorithm in flowchart:
 flowchart TD;
 A([start]) --> B[/enter your weight in kilogram/];
 B --> C[/enter your height in meters/];
-C --> D["BMI = body_weight / (height*height)"];
+C --> D["BMI = weight / (height*height)"];
 D --> E[/print 'your BMI is' BMI/];
 E --> F([end]);
 ```
