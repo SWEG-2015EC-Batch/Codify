@@ -25,8 +25,10 @@ Algorithm in flowchart
 #Flowchart
 ```mermaid
 flowchart TD;
-A([start]) --> B[/enter a lowercase letter/];
-B --> C["convert lowercase to uppercase"];
+A([start]) --> B[/enter a letter/];
+B --> C[" identity the letter as upper or lower case "];
+C --> D[""];
+
 C --> D[/print uppercase/];
 D --> E([end]);
 ```
