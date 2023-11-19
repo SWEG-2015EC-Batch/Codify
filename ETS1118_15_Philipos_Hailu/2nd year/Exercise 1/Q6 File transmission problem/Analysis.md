@@ -22,7 +22,7 @@ Algorithm in flowchart
 #Flowchart
 ```mermaid
 flowchart TD;
-A([start]) --> B[/enter your data size in bytes /];
+A([start]) --> B[/enter the file size in bytes /];
 
 B --> C["calculate sec = d/960"];
 C --> D["calculate min = d/57600"];
