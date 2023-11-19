@@ -55,4 +55,4 @@ step 6. End
    flowchart 
 
  
- 
+ ETS1113_15_PAUL_BEREKET/chapter two practical exercise/flowchart/BMI/BMI calculator flowchart.png
