@@ -19,3 +19,14 @@ Step4; print the letter converted to opposite case
 Step5; end
 
 
+Algorithm in flowchart 
+
+
+#Flowchart
+```mermaid
+flowchart TD;
+A([start]) --> B[/enter a lowercase letter/];
+B --> C["convert lowercase to uppercase"];
+C --> D[/print uppercase/];
+D --> E([end]);
+```
