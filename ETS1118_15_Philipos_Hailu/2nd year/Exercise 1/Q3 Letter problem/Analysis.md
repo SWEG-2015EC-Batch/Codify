@@ -28,6 +28,6 @@ flowchart TD;
 A([start]) --> B[/enter a letter/];
 B --> C[" identity the letter as upper or lower case "];
 C --> D[" Convert it to the opposite case "];
-E --> F[/print opposite case/];
-G --> H([end]);
+D --> E[/print opposite case/];
+E --> F([end]);
 ```
