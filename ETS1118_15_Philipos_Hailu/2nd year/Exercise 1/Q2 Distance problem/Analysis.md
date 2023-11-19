@@ -15,9 +15,9 @@ Algorithm in flowchart :
 #Flowchart
 ```mermaid
 flowchart TD;
-A([start]) --> B[/enter fuil capacity per gallon/];
+A([start]) --> B[/enter the capacity in galon/];
 B --> C[/enter miles per gallon/];
-C --> D["distance = fuil.c * miles per gallon"];
-D --> E[/print 'the distance is' distance/];
+C --> D["number of miles = capacity in galon * miles per gallon"];
+D --> E[/print 'number of miles is' number of miles/];
 E --> F([end]);
 ```
