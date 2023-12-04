@@ -117,4 +117,4 @@ Step 16. end
 
                        Flowchart
                    
-https://github.com/SWEG-2015EC-Batch/Codify/tree/main/ETS1113_15_PAUL_BEREKET%2Fchapter%20two%20practical%20exercise%2Fflowchart%2Fsalary%20calculator
+![flowchart](https://github.com/SWEG-2015EC-Batch/Codify/tree/main/ETS1113_15_PAUL_BEREKET%2Fchapter%20two%20practical%20exercise%2Fflowchart%2Fsalary%20calculator)
