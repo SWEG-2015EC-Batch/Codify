@@ -55,4 +55,4 @@ step 6. End
    flowchart 
 
  
-https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/BMI/BMI%20calculator%20flowchart.png
+![flowchart](https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/BMI/BMI%20calculator%20flowchart.png)
