@@ -65,7 +65,9 @@ Step 3. Calculate time required to transmit data: time = data size / transmissio
  step 4 . Display the time required to transmit the data  
 
  Step 5. End 
-     flowchart
-https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/file%20transmission%20time%20calculator/file%20transmission%20time%20calculator.png
+     
+      flowchart
+
+![flowchart](https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/file%20transmission%20time%20calculator/file%20transmission%20time%20calculator.png)
  
  
