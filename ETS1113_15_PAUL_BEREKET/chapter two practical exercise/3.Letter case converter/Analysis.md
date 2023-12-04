@@ -89,4 +89,4 @@ Step 7. End
   
  flowchart 
 
-https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/case%20converter/Screenshot%202023-11-18%20112538.png
+![flowchart](https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS1113_15_PAUL_BEREKET/chapter%20two%20practical%20exercise/flowchart/case%20converter/Screenshot%202023-11-18%20112538.png)
