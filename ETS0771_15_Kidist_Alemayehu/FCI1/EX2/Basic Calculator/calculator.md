@@ -41,6 +41,8 @@ Output: The result of the respective processStep 1: start
   
   Step 9: stop
 
+ 
   *flow chart
   
 
+https://github.com/SWEG-2015EC-Batch/Codify/blob/main/ETS0771_15_Kidist_Alemayehu/FCI1/EX1/images/photo_2023-12-18_12-17-51.jpg
