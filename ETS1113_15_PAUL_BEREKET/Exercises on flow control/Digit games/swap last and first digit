@@ -1,0 +1,40 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+    int number, originalNumber, lastDigit, firstDigit, numDigits = 0;
+
+    cout << "Enter an integer: ";
+    cin >> number;
+
+
+    originalNumber = number;
+
+    // Finding the last digit
+    lastDigit = number % 10;
+
+    // Finding the number of digits in the input
+    while (number != 0) {
+        number /= 10;
+        numDigits++;
+    }
+
+    // Resetting the number to the original value
+    number = originalNumber;
+
+    // Finding the first digit
+    firstDigit = number / pow(10, numDigits - 1);
+
+    // Swapping the first and last digit
+    int swappedNumber = lastDigit * pow(10, numDigits - 1) + originalNumber % (int)pow(10, numDigits - 1);
+    swappedNumber -= lastDigit;
+    swappedNumber += firstDigit;
+
+
+    cout << "Swapped Number: " << swappedNumber << endl;
+
+    return 0;
+}
+
+
