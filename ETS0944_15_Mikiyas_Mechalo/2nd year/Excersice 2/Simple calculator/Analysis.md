@@ -65,4 +65,4 @@ Process: <br/>
             cout << "The result is " << x / y <<'\n';
             break;
  ## 5. Flowchart
- ![Flowcahrt](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/2/Screenshot%202023-12-18%20154216.png)
+ ![Flowcahrt](https://github.com/mikiyasmechalo/Codify/blob/main/ETS0944_15_Mikiyas_Mechalo/Imges/2/Screenshot%202023-12-18%20155356.png)
