@@ -1,4 +1,4 @@
-//this code calculates the Body mass index by accepting mass and height 
+//this code calculates the Net payment of an employee
 #include <iostream>
 
 using namespace std;
