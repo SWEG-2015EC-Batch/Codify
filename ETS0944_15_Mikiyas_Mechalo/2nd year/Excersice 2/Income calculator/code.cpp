@@ -44,10 +44,7 @@ int main(){
     incometax = grossalary * incometaxRate;
     netsalary = grossalary - pension - incometax;
 
-    cout << "\nYour salary for the month is " << netsalary << '.';
-
-
-
+    cout << "\nYour Net-salary is " << netsalary << '.';
 
     return 0;
 
