@@ -1,1 +1,41 @@
+// this program prints inverted right angle triangle 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int row,colom;
+    char character;
+   
+
+    
+  
+    cout<< "Enter the character you want to build your half pyramid with: ";
+    cin>> character;
+    cout << "Enter the number of rows: ";
+    cin>>row;
+   colom = row;
+
+     for (int r=1;r<=row;r++) {
+        for (int c=1;c<=colom;c++) {
+            if (r==1||c==1||c<=colom-r+1) {
+                cout<< character<< " ";
+            }
+            else {
+                cout<< "  ";
+            }
+        }
+        cout<<endl;
+    }
+    
+
+  
+
+    
+
+
+
+    return 0;
+}
 
