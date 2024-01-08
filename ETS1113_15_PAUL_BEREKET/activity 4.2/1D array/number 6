@@ -1,0 +1,43 @@
+// this is a program that store a list of number and print the even numbers in the array in reverse order they
+are entered.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int i,n;
+  cout<<"how many numbers are there: ";
+  cin>>n;
+  int nums[n]{};
+
+  //read all numbers from the user
+
+  for(i=0;i<n;i++){
+    cout<< "enter number " <<i+1<<": ";
+    cin>>nums[i];
+  }
+
+  //print the numbers that are only even by reverse order of their input
+
+   for(i=n-1;i>=0;i--){
+
+    if(nums[i]==0){
+        continue;
+    }
+
+
+    else if(nums[i]%2==0){
+        cout<<nums[i]<<"\n";
+    }
+
+    else {
+        continue;
+    }
+
+
+  }
+
+    return 0;
+}
