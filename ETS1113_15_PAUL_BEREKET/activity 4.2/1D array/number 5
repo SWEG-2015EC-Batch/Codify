@@ -1,0 +1,65 @@
+// this is a program that read total mark of a students and print the score level with the mark in tabular
+format.
+
+#include <iostream>
+
+#include <string>
+
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+  int n,i;
+
+  //read total number of students
+
+  cout<<"how many students do we have? " ;
+  cin>>n;
+
+  float result[n]{};
+  string status[n]{} , name[n]{};
+
+
+  //read students name, result and assign there status
+
+  for(i=0;i<n;i++){
+
+    cout<<"enter the result of student "<<i+1<< ": ";
+    cin>>result[i];
+
+
+    if(result[i]>=85 && result[i]<=100){
+        status[i]="Excellent";
+    }
+    else if(result[i]<85 && result[i]>=60){
+        status[i]="Very good";
+    }
+
+    else if(result[i]<60 && result[i]>=50){
+        status[i]="fair";
+    }
+   else if(result[i]<50 && result[i]>=40){
+        status[i]="poor";
+    }
+  else if(result[i]<40 && result[i]>=0){
+    status[i]="fail";
+  }
+  else {
+    status[i]="Invalid score";
+  }
+  }
+   //print the header row
+  cout<<setw(10)<<"Number"<<setw(10)<<"result"<<setw(20)<<"status"<<endl;
+
+  //print the table
+
+  for(i=0;i<n;i++){
+    cout<<setw(10)<<i+1<<setw(10)<<result[i]<<setw(20)<<status[i]<<endl;
+  }
+
+
+    return 0;
+}
+
