@@ -1,3 +1,5 @@
+// this is a program that stores values to an array
+
 #include <iostream>
 
 using namespace std;
