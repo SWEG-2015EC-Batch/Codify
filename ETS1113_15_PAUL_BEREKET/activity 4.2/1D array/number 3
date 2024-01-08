@@ -1,0 +1,28 @@
+//this program adds the equivalent elements an array 
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int first[5],second[10],i,sum[5];
+    for(i=0;i<5;i++){12
+        cout<<"enter the first array value "<<i+1<<": ";
+        cin>>first[i];
+        cout<<"enter the second array value "<<i+1<<": ";
+        cin>>second[i];
+        sum[i]=first[i]+second[i];
+    }
+
+    //print the header row of the table
+
+    cout<<setw(10)<<"first"<<setw(10)<< "second"<<setw(10)<<"sum   \n";
+
+   //print the values inside the table
+
+    for(i=0;i<5;i++){
+      cout<<setw(9)<<first[i]<<setw(10)<<second[i]<<setw(10)<<sum[i]<<endl;
+    }
+    return 0;
+}
