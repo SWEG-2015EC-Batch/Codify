@@ -1,3 +1,5 @@
+// Write a program that checks whether two one dimensional arrays of the same size are
+// identical (have the same elements) or not. 
 #include <iostream>
 
 using namespace std;
