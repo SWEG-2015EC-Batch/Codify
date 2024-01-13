@@ -1,3 +1,5 @@
+// Write a C++ program to that accepts a two-dimensional array and displays the multiplication
+// of row elements and the sum of column elements.
 #include <iostream>
 
 using namespace std;
