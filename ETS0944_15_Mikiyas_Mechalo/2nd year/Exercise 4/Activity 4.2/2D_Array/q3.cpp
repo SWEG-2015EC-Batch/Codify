@@ -1,3 +1,6 @@
+// Write a program to store exam scores (test, assignment, quiz, project and final). The
+// program should determine and print the score level alongside with the total mark in tabular
+// format. Score status level for score >=80 Excellent, >=60 Very Good, >= 50 Fair, >=40 poor and <40 Fail. 
 #include <iostream>
 
 using namespace std;
