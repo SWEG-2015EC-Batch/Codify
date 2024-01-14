@@ -1,3 +1,4 @@
+//a program that find the frequency of vowel, consonant, digit and special character 
 #include <iostream>
 using namespace std;
 int main(){
