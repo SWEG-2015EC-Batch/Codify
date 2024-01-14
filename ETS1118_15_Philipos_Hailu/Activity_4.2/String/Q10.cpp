@@ -1,3 +1,4 @@
+//a program that stores a password in a character array called pass. The program then ask users for the password and check whether they typed the proper password or not.
 #include <string.h>
 #include <iostream>
 
