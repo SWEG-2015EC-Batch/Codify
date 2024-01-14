@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string input;
+   cout<< "enter characters: ";
+   getline(cin,input);
+
+   //selecting alphabets only and saving them to a new array
+   string output;
+   for(char ch:input){
+
+    if(isalpha(ch)){
+     output+=ch;
+    }
+   }
+   cout<<"the input string with all non-alphabetic characters removed is: "<<output<<"\n";
+    return 0;
+}
