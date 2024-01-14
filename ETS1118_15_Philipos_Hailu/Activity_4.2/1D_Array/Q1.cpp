@@ -1,36 +1,17 @@
-// a program that reads the N person full name mid exam and find the total and the mid and final should be stored in the program also print the full name and total in tabular format
-#include<iostream>
+// a program to declare a 4-by-5 array of integers
+#include <iostream>
 using namespace std;
-
 int main(){
-int N;
-//N by 3 colomn
-cout<<"enter the number of students:";
-cin>>N;
-string fullName[N];
-int result[N][3];
 
-    for(int i=0; i<N; i++){
+   int intigers[5][4]={16,22,99,4,18,-258,4,101,5,98,105,6,15,2,45,33,88,72,16,3};// Q1 of activity 4.2 chere google classroom
+   //row =i and column= j
+   for(int i = 0; i < 5; i++){
+    for (int j = 0; j < 4; j++){
+        cout<<intigers[i][j]<<"\t";   
+    }
+   cout<<endl; 
 
-    cout<<"Enter full name: ";
-    // cin.getline(FullName);
-    cin>>fullName[i];
+   }
 
-    cout<<"Enter mid-exam: ";
-    cin>>result[i][0];
-
-    cout<<"Enter final-exam: ";
-    cin>>result[i][1];
-
-    result[i][2]=result[i][0] + result[i][1];
-
-
-    
+    return 0;
 }
-cout<<"Full name: "<<"Mid-Exam: "<<"\tfinal-Exam: "<<"\ttotal result is; "<<endl;
-for(int i=0;i<N;i++){
-    cout<<fullName[i]<<"\t"<<result[i][0]<<"\t"<<result[i][1]<<"\t"<<result[i][2]<<endl;
-}
-return 0;
-}
-
