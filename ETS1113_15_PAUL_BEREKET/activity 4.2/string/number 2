@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+
+
+ int length=0,i,j;
+ string word;
+ cout<<"enter a word ";
+ getline(cin, word);
+
+ for(i=0;word[i]!=0;i++){
+ length++ ;
+
+ }
+cout<<length;
+  bool ispalindrome=true;
+  for(i=0,j=length-1;i<j;i++,j--){
+    if(word[i]!=word[j]){
+        ispalindrome=false;
+        break;
+    }
+  }
+  if(ispalindrome){
+    cout<<"\n The word you entered is palindrome\n";
+  }
+else{
+        cout<<"\n The word you entered is not palindrome\n";
+
+}
+  return 0;
+}
