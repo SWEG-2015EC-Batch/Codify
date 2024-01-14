@@ -1,3 +1,6 @@
+//a program that asks the user for its first, middle and last name and then prints the
+
+user’s initials on-screen by printing the first character of each name.
 #include <iostream>
 #include <string.h>
 
