@@ -1,1 +1,38 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    int test, assignment, quiz, project, final;
+    cout << "Enter test score: ";
+    cin >> test;
+    cout << "Enter assignment score: ";
+    cin >> assignment;
+    cout << "Enter quiz score: ";
+    cin >> quiz;
+    cout << "Enter project score: ";
+    cin >> project;
+    cout << "Enter final score: ";
+    cin >> final;
+
+    int total = test + assignment + quiz + project + final;
+
+    cout << "\nScore Level\tTotal Mark" << endl;
+    cout << "--------------------------------" << endl;
+
+    if (total >= 80) {
+        cout << "Excellent\t" << total << endl;
+    } else if (total >= 60) {
+        cout << "Very Good\t" << total << endl;
+    } else if (total >= 50) {
+        cout << "Fair\t\t" << total << endl;
+    } else if (total >= 40) {
+        cout << "Poor\t\t" << total << endl;
+    } else {
+        cout << "Fail\t\t" << total << endl;
+    }
+
+    return 0;
+}
 
