@@ -1,3 +1,4 @@
+//a program that read a string and count number of vowels and consonants alphabet present in a string.
 #include <iostream>
 using namespace std;
 int main(){
