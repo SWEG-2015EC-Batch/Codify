@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+   int vowel_count=0, consonant_count=0;
+   string input;
+   cout<<"enter characters: ";
+   getline(cin,input);
+
+
+   for(char let:input){
+
+    if(isalpha(let)){
+            let=toupper(let);
+
+      if(let=='A' || let=='E' || let=='I' || let=='O' || let=='U'){
+        vowel_count++;
+      }
+
+      else{
+        consonant_count++;
+      }
+    }
+   }
+
+   cout<<"number of consonant letters: "<<consonant_count<<"\n"<<"number of vowel: "<<vowel_count;;
+
+    return 0;
+}
