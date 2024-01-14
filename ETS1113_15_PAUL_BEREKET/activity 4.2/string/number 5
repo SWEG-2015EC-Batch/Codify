@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+
+string input;
+int vowel_count=0, consonant_count=0, specialCharacter_count=0, digit_count=0;
+
+cout<<"enter the string: ";
+getline(cin,input);
+for(char ch:input){
+
+    if(isalpha(ch)){
+     ch=toupper(ch);
+
+     if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+        vowel_count++;
+     }
+     else{
+        consonant_count++;
+     }
+    }
+
+    else if(isdigit(ch)){
+        digit_count++;
+    }
+    else if(!isalnum(ch)){
+        specialCharacter_count++;
+    }
+}
+
+//printing frequencies
+  cout<<"number of vowels: "<<vowel_count<<endl;
+  cout<<"number of cnsonants: "<<consonant_count<<endl;
+  cout<<"number of digits: "<<digit_count<<endl;
+  cout<<"number of special charatcer: "<<specialCharacter_count<<endl;
+
+
+
+    return 0;
+}
