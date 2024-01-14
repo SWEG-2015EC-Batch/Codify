@@ -1,3 +1,4 @@
+// a program to find the frequency of characters within string and display character with largest and smallest frequency respectively.
 #include <iostream>
 using namespace std;
 int main(){
