@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string inputString;
+
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, inputString);
+
+    int charFrequency[256] = {0}; 
+
+    for (char ch : inputString) {
+        if (isalpha(ch)) {
+            charFrequency[ch]++;
+        }
+    }
+
+    char maxChar = '\0', minChar = '\0';
+    int maxFreq = 0, minFreq = inputString.length() + 1;
+
+    for (int i = 0; i < 256; i++) {
+        if (isalpha(i)) {
+            if (charFrequency[i] > maxFreq) {
+                maxFreq = charFrequency[i];
+                maxChar = static_cast<char>(i);
+            }
+            if (charFrequency[i] < minFreq && charFrequency[i] > 0) {
+                minFreq = charFrequency[i];
+                minChar = static_cast<char>(i);
+            }
+        }
+    }
+
+    std::cout << "Character with largest frequency: " << maxChar << " (" << maxFreq << " times)" << std::endl;
+    std::cout << "Character with smallest frequency: " << minChar << " (" << minFreq << " times)" << std::endl;
+
+    return 0;
+}
