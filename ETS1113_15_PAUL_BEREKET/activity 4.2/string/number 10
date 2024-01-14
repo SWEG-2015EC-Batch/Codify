@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    const char pass[] = "paul123";
+    char input[20];
+
+    cout << "Enter the password: ";
+    cin >> input;
+
+    if (strcmp(input, password) == 0) {
+        cout << "Correct password!" << endl;
+    } else {
+        cout << "Incorrect password!" << endl;
+    }
+
+    return 0;
+}
