@@ -1,3 +1,4 @@
+// a program that accept name of persons and put them in alphabetical order.
 #include <iostream>
 using namespace std;
 int main(){
