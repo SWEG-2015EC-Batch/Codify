@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+    string input, upper_case, lower_case;
+    cout<<"enter the text: ";
+    getline(cin, input);
+    for(char ch:input){
+        upper_case+=toupper(ch);
+    }
+    cout<<"uppercase: "<<upper_case;
+
+    for(char ch:input){
+        lower_case+=tolower(ch);
+    }
+    cout<<"\n lowercase: "<<lower_case;
+    return 0;
+}
