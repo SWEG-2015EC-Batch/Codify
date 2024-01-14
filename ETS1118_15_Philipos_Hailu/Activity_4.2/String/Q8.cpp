@@ -1,3 +1,4 @@
+//an application that inputs a line of text and outputs the text twice, once in all uppercaseand once in all lowercase letters.
 #include <string.h>
 #include <iostream>
 #include <cstring>
