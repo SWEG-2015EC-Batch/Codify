@@ -1,3 +1,4 @@
+//a program to check either the word is palindrome or not using loop.
 #include <iostream>
 
 using namespace std;
