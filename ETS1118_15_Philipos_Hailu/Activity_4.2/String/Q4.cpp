@@ -1,3 +1,4 @@
+//an application that inputs a line of text, and tokenizes it. It uses space characters as delimiters.
 #include <stdio.h>
 #include <string.h>
 using namespace std;
