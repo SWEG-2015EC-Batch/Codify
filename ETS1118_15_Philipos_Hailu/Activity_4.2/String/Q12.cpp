@@ -1,3 +1,4 @@
+//a program that store an answer sheet for a test containing 10 multiple choice questions. The program accepts the student answer, and print the test score along with the marked student answer.
 #include <string.h>
 #include <iostream>
 
