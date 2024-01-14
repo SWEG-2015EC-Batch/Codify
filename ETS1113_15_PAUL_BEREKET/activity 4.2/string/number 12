@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    const string correctAnswers = "abbcbdaccc";
+    string studentAnswers;
+
+    cout << "Enter the student's answers (10 characters - a, b, c, or d): ";
+    cin >> studentAnswers;
+
+    int score = 0;
+    cout << "Marked student answer: " << studentAnswers << endl;
+    for (int i = 0; i < 10; i++) {
+        if (studentAnswers[i] == correctAnswers[i]) {
+            score++;
+        }
+    }
+
+    cout << "Test score: " << score << "/10" << endl;
+
+    return 0;
+}
