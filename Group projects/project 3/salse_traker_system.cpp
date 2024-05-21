@@ -24,9 +24,9 @@
      * Search Functionality
      
     Section C team members:
-     1, Kidist Alemayew     ETS /15
-     2, Mikiyas Mechalo     ETS /15
-     3, Paul Bereket        ETS /15
+     1, Kidist Alemayew     ETS 0771/15
+     2, Mikiyas Mechalo     ETS 1144/15
+     3, Paul Bereket        ETS 1113/15
      4, Philipos Hailu      ETS 1117/15
      5, Rajaf Dereje        Ets 1123/15
 */
