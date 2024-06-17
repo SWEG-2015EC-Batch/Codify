@@ -21,7 +21,8 @@
      * Summarize Monthly Sales
      * Calculate Totals and Bonuses
      * Print the Results in a Table
-     * Search Functionality
+     * Search Function
+     * Edit Function 
      
     Section C team members:
      1, Kidist Alemayew     ETS 0771/15
@@ -34,6 +35,8 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <limits>
+#include <vector>
 using namespace std;
 
 struct s_data{
@@ -43,26 +46,28 @@ struct s_data{
 };
 
 const int employee = 4; // number of salses person
-int product_number = 5; // number of product sold
+const int product_number = 5; // number of product sold
 
-void input_data(s_data [] , int &);
-void write_to_file(s_data[], int );
-void read_from_file(s_data [], int &);
-void report(s_data [], int);
-void search(s_data [], int);
+void input_data(vector<s_data>&, int&);
+void write_to_file(const vector<s_data>&);
+void read_from_file(vector<s_data>&, int&);
+void report(const vector<s_data>&, int);
+void search(const vector<s_data>&, int);
+void edit(vector<s_data>&, int);
 
 int main(){
 
-    s_data sales[100]; // assuming 100 is the max entries per month. (it can be changed if neccessary)
-    int daily_entries(0); // number of daily entries of all salse persons combined
+    vector<s_data> sales; // automatically adjusts the size for out total entrie
+    int numbers(0); // number of total entries of all salse persons combined
 
     while(true){
-        cout<<endl<<"Menu:\n";
-        cout<<"1. Input the daly sales data\n";
-        cout<<"2. Generate monthly sales report\n";
-        cout<<"3. search for product or salesperson record\n";
-        cout<<"4. Exit the program\n";
-        cout<<"Enter your chooice: ";
+        cout << endl << "Menu:\n";
+        cout << "1. Input the daly sales data\n";
+        cout << "2. Generate monthly sales report\n";
+        cout << "3. search for product or salesperson record\n";
+        cout << "4. Edit the report\n";
+        cout << "5. Exit the program\n\n";
+        cout << "Enter your chooice: ";
         
         char chooice;
         cin >> chooice;
@@ -72,29 +77,31 @@ int main(){
             cin.clear();
 
             cout << "Error handling input data\n";
-            cout << "please enter a character 1 - 4 \n";
+            cout << "please enter a character 1 - 5 \n";
             cout << "Enter chooice: ";
-            cin.ignore();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
             cin >> chooice;
         }
         
         switch (chooice){
         case '1':
-            input_data(sales , daily_entries);
-            write_to_file(sales, daily_entries);
+            input_data(sales , numbers);
+            write_to_file(sales);
             break;
         case '2':
-            read_from_file(sales, daily_entries);
-            report(sales, daily_entries);
+            read_from_file(sales, numbers);
+            report(sales, numbers);
             break;
         case '3':
-            search(sales, daily_entries);
+            search(sales, numbers);
             break;
         case '4':
-            return 1;
+            edit(sales, numbers);
+            write_to_file(sales); // updates file after edit
             break;
-        
+        case '5':
+            return 0;
         default:
             cout << "Invalid input chooice\n please choose again\n";
             break;
@@ -106,65 +113,88 @@ int main(){
 }
 
 // This function doesn't need an explanation
-void input_data(s_data daily[] , int& number){
+void input_data(vector<s_data>& sales , int& number){
+    int daily_number;
     cout << "number of daily sales enteries: ";
-    cin >> number;
+    cin >> daily_number;
 
-    for(int i = 0; i < number; i++){
-        cout << "Entery "<< i + 1 << endl;
-        cout << "Employee identification number (1-4): ";
-        cin >> daily[i].salse_person;
-        cout << "Prodict identification number(1 - 5): ";
-        cin >> daily[i].product_sold;
-        cout << "Sales amount: ";
-        cin >> daily[i].amount;
-    }
-}
-
-// This also doesn't need an explanation
-void write_to_file( s_data daily[], int number){
-    ofstream fwrite("database.txt", ios::app);
-    if(!fwrite){
-        cerr << "Error opening file for writing\n"; // cerr is used to display error messeges.(we can also use cout; no difference)
+    if(daily_number <= 0){
+        cout << "Invalid number of entries\n";
         return;
     }
 
-    for(int i = 0; i < number; i++){
-        fwrite << daily[i].salse_person << " " << daily[i].product_sold << " " << daily[i].amount <<endl;
+    for(int i = 0; i < daily_number; i++){
+        s_data entry;
+        cout << "Entery "<< i + 1 << endl;
+
+        // error chech employee id
+        do{
+            cout << "Employee identification number (1-4): ";
+            cin >> entry.salse_person;
+        } while(entry.salse_person < 1 || entry.salse_person > employee);
+
+        // error check product id
+        do{
+            cout << "Prodict identification number(1 - 5): ";
+            cin >> entry.product_sold;
+        } while(entry.product_sold < 1 || entry.product_sold > product_number);
+        
+        cout << "Sales amount: ";
+        cin >> entry.amount;
+
+        sales.push_back(entry);
+    }
+
+    number += daily_number; // updates total number of entries
+}
+
+// This also doesn't need an explanation
+void write_to_file(const vector<s_data>& sales){
+    ofstream fwrite("database.txt", ios::app);
+    if(!fwrite){
+        cerr << "Error opening file for writing\n"; // cerr is used to display error messeges.(we can also use cout;)
+        return;
+    }
+
+    for(const auto& entry : sales){
+       fwrite << entry.salse_person << " " << entry.product_sold << " " << entry.amount << endl;
     }
 
     fwrite.close();
 }
 
-void read_from_file(s_data daily[], int &number){
+void read_from_file(vector<s_data>& sales, int &number){
     ifstream fread("database.txt");
     if(!fread){
         cerr << "Error opening file for reading\n";
         return;
     }
 
+    sales.clear(); // clears current data in the variable
     number = 0;
 
+    s_data entry;
     // The while loop returns true as long as the extaction operation succeds. once the file pointer 
     // reaches the end of file it returns false
-    while(fread >> daily[number].salse_person >> daily[number].product_sold >> daily[number].amount){
+    while(fread >> entry.salse_person >> entry.product_sold >> entry.amount){
+        sales.push_back(entry);
         number++;
     }    
 
     fread.close();
 }
 
-void report(s_data daily[], int number){
+void report(const vector<s_data>& sales, int number){
     double salseBySalseperson[employee] = {0};
     double slaseByProduct[product_number] = {0};
     double total(0);
 
     // To itrate between all the entries
     for(int i = 0; i < number; i++){
-        if(daily[i].salse_person >=1 && daily[i].salse_person <= employee && daily[i].product_sold >= 1 && daily[i].product_sold <= product_number){
-            salseBySalseperson[daily[i].salse_person - 1] += daily[i].amount;   // Calculates total sales by a single salse person
-            slaseByProduct[daily[i].salse_person - 1] += daily[i].amount;   // Calculates total salse of a single product   
-            total += daily[i].amount;   // Calculates the total amount sold
+        if(sales[i].salse_person >=1 && sales[i].salse_person <= employee && sales[i].product_sold >= 1 && sales[i].product_sold <= product_number){
+            salseBySalseperson[sales[i].salse_person - 1] += sales[i].amount;   // Calculates total sales by a single salse person
+            slaseByProduct[sales[i].product_sold - 1] += sales[i].amount;   // Calculates total salse of a single product   
+            total += sales[i].amount;   // Calculates the total amount sold
         }
     }
 
@@ -180,8 +210,8 @@ void report(s_data daily[], int number){
         for(int j = 0; j < employee; j++){  // Itrate between colums of the table
             double salesAmount = 0;
             for(int k = 0; k < number; k++){
-                if(daily[k].product_sold == i + 1 && daily[k].salse_person == j + 1){   // Calculates the salse of a single salse person on a single product
-                    salesAmount += daily[k].amount;
+                if(sales[k].product_sold == i + 1 && sales[k].salse_person == j + 1){   // Calculates the salse of a single salse person on a single product
+                    salesAmount += sales[k].amount;
                 }
             }
             cout << setw(10) << salesAmount;
@@ -195,27 +225,16 @@ void report(s_data daily[], int number){
         cout << setw(10) << salseBySalseperson[i];
     }
     cout << setw(10) << total << endl;
+
+    // calculate and display bonuses
+    cout << setw(15) << "Bonus";
+    for(int i = 0; i < employee; i++){
+        cout << setw(10) << salseBySalseperson[i] * 0.05;
+    }
+    cout << endl;
 }
 
-void search(s_data sales[], int number){
-
-    int password = 123456;
-    int ver;
-
-    cout << "Only authorized personal has access to this feature\n";
-    cout << "Enter password to access the search freacher\n";
-    cout << "Password: ";
-
-    for(int i = 3; i >= 0; i--){
-        cin >> ver;
-        if(ver == password)
-            break;
-        if (i == 0){
-            cout << "You have exausted your tries\n";
-            return;
-        }
-        cout << "Incorrect password " << i  << " tries left\n";
-    }
+void search(const vector<s_data>& sales, int number){
 
     char choice;
 
@@ -231,7 +250,7 @@ void search(s_data sales[], int number){
         cout << "Error handling input data\n";
         cout << "please enter a character 1 or 2 \n";
         cout << "Enter chooice: ";
-        cin.ignore();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         cin >> choice;
     }
@@ -256,7 +275,7 @@ void search(s_data sales[], int number){
         cin >> product_ID;
         cout << "sales records for product " << product_ID << ":\n";
         cout<<"salse person\tAmount\n";
-        for(int i = 0; i < product_number; i++){
+        for(int i = 0; i < number; i++){
             if(sales[i].product_sold == product_ID)
                 cout << sales[i].salse_person << "\t\t" << sales[i].amount << endl;
         }
@@ -265,4 +284,53 @@ void search(s_data sales[], int number){
         cout << "Invalid input!\n";
     }
 
+}
+
+void edit(vector<s_data>& sales, int number){
+
+    int password = 123456;
+    int ver;
+
+    cout << "Only authorized personal has access to this feature\n";
+    cout << "Enter password to access the search freacher\n";
+    cout << "Password: ";
+
+    for(int i = 3; i >= 0; i--){
+        cin >> ver;
+        if(ver == password)
+            break;
+        if (i == 0){
+            cout << "You have exausted your tries\n";
+            return;
+        }
+        cout << "Incorrect password " << i  << " tries left\n";
+    }
+
+    cout << "Current database:\n";
+    cout << "Index\tEmp_id\tProd-id\tAmount\n";
+    for(int i = 0; i < number; i++){
+        cout << i << '\t' << sales[i].salse_person << '\t' << sales[i].product_sold << '\t' << sales[i].amount << endl;
+    }
+
+    int entryIndex;
+    cout << "Enter the index of the entry to edit (0 to " << number - 1 << "): ";
+    cin >> entryIndex;
+
+    if (entryIndex < 0 || entryIndex >= number) {
+        cout << "Invalid entry index!\n";
+        return;
+    }
+
+    cout << "Editing entry " << entryIndex << ":\n";
+    cout << "Current salesperson ID: " << sales[entryIndex].salse_person << "\n";
+    cout << "Enter new salesperson ID (1-4): ";
+    cin >> sales[entryIndex].salse_person;
+
+    cout << "Current product ID: " << sales[entryIndex].product_sold << "\n";
+    cout << "Enter new product ID (1-5): ";
+    cin >> sales[entryIndex].product_sold;
+
+    cout << "Current sales amount: " << sales[entryIndex].amount << "\n";
+    cout << "Enter new sales amount: ";
+    cin >> sales[entryIndex].amount;
 }
